@@ -7,6 +7,7 @@ const cleanCSS = require('gulp-clean-css');
 const pug = require('gulp-pug');
 
 const webConfig = {
+  mode: 'production',
   output: {
     filename: 'index.js'
   },

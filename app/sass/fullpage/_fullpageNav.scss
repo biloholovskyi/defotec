@@ -1,0 +1,12 @@
+.fullPageNav {
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  z-index: 100;
+  transition: all .3s;
+
+  &__item {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+}

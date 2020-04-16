@@ -4,4 +4,19 @@ block variables
   - const pageTitle = 'Главная'
 
 block content
-  h1 Hello
+  .fullPageNav
+    .fullPageNav__item(data-number=1) 1
+    .fullPageNav__item(data-number=2) 2
+    .fullPageNav__item(data-number=3) 3
+
+  section.fullPage
+    include ../modules/header
+    h1 page 1
+
+  section.fullPage
+    include ../modules/header
+    h1 page 2
+
+  section.fullPage
+    include ../modules/header
+    h1 page 3

@@ -1,11 +1,8 @@
 import 'normalize.css';
-import {nextSlid, prevSlid, calcSlid} from "./slider";
+import {fullPageNav} from "./fullpageNav";
 
 $(document).ready(function(){
-  calcSlid();
-
-	$('.slider__nav .next').on('click', (event) => nextSlid(event));
-	$('.slider__nav .prev').on('click', (event) => prevSlid(event));
+  $('.fullPageNav__item').on('click', (e) => fullPageNav(e))
 });
 
 $(window).resize(function () {
