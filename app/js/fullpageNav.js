@@ -1,6 +1,16 @@
+const sections = $('.fullPage');
+
 const fullPageNav = (e) => {
-  const sections = $('.fullPage');
   sections.css('transform', `translateY(-${+e.target.getAttribute('data-number') - 1}00vh)`);
 }
 
-export {fullPageNav}
+const fullPageStart = () => {
+  sections.each((index, section) => {
+    console.log(section);
+    sections.eq(index).css({
+      'top': `${index}00vh`
+    });
+  })
+}
+
+export {fullPageNav, fullPageStart}

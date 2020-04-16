@@ -1,7 +1,19 @@
-//@font-face {
-//  font-family: 'HeliosCond';
-//  src: url('../fonts/HeliosCond/HeliosCond.otf');
-//  src: url('../fonts/HeliosCond/HeliosCond.otf') format('truetype');
-//  font-weight: normal;
-//  font-style: normal;
-//}
+// Proxima Nova
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova/ProximaNova-Bold.ttf');
+  src: url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// BankSansEFCY
+
+@font-face {
+  font-family: 'Bank Sans EF CY';
+  src: url('../fonts/BankSansEFCY/medium.otf');
+  src: url('../fonts/BankSansEFCY/medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

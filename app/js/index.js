@@ -1,7 +1,9 @@
 import 'normalize.css';
-import {fullPageNav} from "./fullpageNav";
+import {fullPageNav, fullPageStart} from "./fullpageNav";
 
-$(document).ready(function(){
+$(document).ready(function() {
+  fullPageStart();
+
   $('.fullPageNav__item').on('click', (e) => fullPageNav(e))
 });
 

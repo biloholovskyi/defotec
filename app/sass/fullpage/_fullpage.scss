@@ -1,6 +1,12 @@
 .fullPage {
   height: 100vh;
+  width: 100%;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(82, 157, 227, 0) 0%, #1775CC 91.15%);
   transition: all .9s ease-in-out;
+  transform: translateY(0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
 }

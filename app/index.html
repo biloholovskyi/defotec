@@ -7,28 +7,22 @@
     <title>Главная</title>
   </head>
   <body>
-    <div class="fullPageNav">
-      <div class="fullPageNav__item" data-number="1">1</div>
-      <div class="fullPageNav__item" data-number="2">2</div>
-      <div class="fullPageNav__item" data-number="3">3</div>
-    </div>
+    <header class="header"><a class="header__logo" href="/"><img src="./media/icon/logo.svg"></a>
+      <div class="main-container header__nav-container">
+        <div class="header__nav"><a class="nav__link" href="#">Продукция</a><a class="nav__link" href="#">Сервисная служба</a><a class="nav__link" href="#">О компании</a><a class="nav__link" href="#">Контакты</a></div>
+      </div>
+      <button class="header__button">Связаться</button>
+    </header>
+    <!--.fullPageNav-->
+    <!--  .fullPageNav__item(data-number=1) 1-->
+    <!--  .fullPageNav__item(data-number=2) 2-->
+    <!--  .fullPageNav__item(data-number=3) 3-->
+    <section class="fullPage home__first" style="background-image: url(./media/image/home.jpg)"></section>
     <section class="fullPage">
-      <header class="header">
-        <h1>Header</h1>
-      </header>
-      <h1>page 1</h1>
-    </section>
-    <section class="fullPage">
-      <header class="header">
-        <h1>Header</h1>
-      </header>
       <h1>page 2</h1>
     </section>
     <section class="fullPage">
-      <header class="header">
-        <h1>Header</h1>
-      </header>
-      <h1>page 3</h1>
+      <h1>page -- 3</h1>
     </section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="buildjs/index.js"></script>
