@@ -1,0 +1,152 @@
+.home__about {
+  background: #3586DC;
+  display: flex;
+  align-items: center;
+
+  .about__content {
+    display: flex;
+
+    .about__title {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      margin-bottom: 50px;
+    }
+
+    .about__text {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 25px;
+      color: #FFFFFF;
+      max-width: 391px;
+      margin-bottom: 50px;
+    }
+
+    .about__link {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 25px;
+      color: #FFFFFF;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-image: url(../media/icon/arrow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 50%;
+        margin-top: -6px;
+        right: -17px;
+      }
+    }
+
+    .about__video {
+      width: 350px;
+      height: 350px;
+      background-image: url(../media/icon/polygon-video.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 150px;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .video__poster {
+        width: 275px;
+        height: 275px;
+        position: absolute;
+        background-image: url(../media/image/video-poster.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 50%;
+        margin-top: -137.5px;
+        margin-left: -137.5px;
+      }
+      
+      .video__play {
+        background-image: url(../media/icon/play.svg);
+        width: 43.88px;
+        height: 43.88px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 50%;
+        left: 50%;
+        margin-top: -21.94px;
+        margin-left: -21.94px;
+        position: absolute;
+      }
+      
+      .video__time {
+        font-family: 'Proxima Nova', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 93.88px;
+        position: relative;
+        z-index: 20;
+      }
+    }
+
+    .about__numbers {
+      margin-top: -90px;
+
+      .about__number {
+        font-family: 'Bank Sans EF CY', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 90px;
+        line-height: 108px;
+        letter-spacing: -0.1em;
+        color: #FFFFFF;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          top: -12.5px;
+          left: -12.5px;
+          background-image: url(../media/icon/border.svg);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .about__desc {
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 80px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,13 @@
 .main-container {
   width: 100%;
   margin: 0 60px 0 230px;
+  position: relative;
+
+  &__last {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 522px;
+  }
 }
