@@ -28,8 +28,6 @@
   width: 100%;
   max-width: 100%;
   padding: 0 20px;
-  height: 100px;
-  background-color: red;
 
   &--2 {
     max-width: calc(100% / 10 * 2)
@@ -41,5 +39,9 @@
 
   &--5 {
     max-width: calc(100% / 10 * 5)
+  }
+
+  &--8 {
+    max-width: calc(100% / 10 * 8)
   }
 }

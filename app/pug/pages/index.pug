@@ -128,8 +128,25 @@ block content
         .fon-video__logo-text лет #[br] безупречной #[br] работы
 
   section.fullPage.home-man
-    .m-container
+    .m-container.home-man__container
+      .m-row.home-man__row
+        .m-col.m-col--2
+        .m-col.m-col--8
+          img.home-man__poligon(src='./media/icon/big-poligon.svg')
       .m-row
         .m-col.m-col--3
+          .home-man__text-icon “
+          h3.home-man__name Константин Сахаровский
+          .home-man__post Генеральный директор
+          .home-man__about Мы располагаем современным грузовым парком грузоподъемностью до 21 тонны на базе новых тягачей Renault T-series, Volvo FH с тентованными полуприцепами.
+          .home-man__nav
+            .nav-item.prev.disabled
+            .nav-item.next
         .m-col.m-col--5
+          .home-man__big-img-wrapp
+            img.home-man__big-img(src='./media/image/man-big.png')
         .m-col.m-col--2
+          .home-man__list
+            .item.item--active(style='background-image: url(./media/image/man-1.png)')
+            .item(style='background-image: url(./media/image/man-2.png)')
+            .item(style='background-image: url(./media/image/man-1.png)')
