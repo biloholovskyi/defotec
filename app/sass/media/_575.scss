@@ -1,3 +1,27 @@
 @media screen and (max-width: 575px) {
+  // first block
+  .home__first {
+    .first__wrapper {
+      .first__title {
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
 
+    .first__buttons {
+      margin-top: 35px;
+
+      &:last-child {
+        margin-top: 0;
+      }
+
+      .first__button {
+        padding: 9px 15px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 12px;
+      }
+    }
+  }
+  // first block end
 }
