@@ -22,6 +22,11 @@
     z-index: 501;
   }
 
+  &__humb,
+  &__mobile {
+    display: none;
+  }
+
   &__logo {
     img {
       height: 54px;
