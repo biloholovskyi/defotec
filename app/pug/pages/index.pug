@@ -6,6 +6,9 @@ block variables
 block content
   include ../modules/header
 
+  .anim-block
+    .anim-block__item
+
   .fullPageNav
     .fullPageNav__delimiter.fullPageNav__delimiter--first
     .fullPageNav__item.fullPageNav__item--active(data-number=1)
@@ -38,7 +41,7 @@ block content
               .first__buttons
                 button.first__button Биоциды
                 button.first__button Флокулянты
-            button.first__button-down
+            button.first__button-down(data-number=2)
 
   section.fullPage.home__about
     .m-container
