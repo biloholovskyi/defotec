@@ -84,26 +84,26 @@
     background-image: url(../media/icon/arrow.svg);
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(82, 157, 227, 0) 0%, #1775CC 91.15%);
-    transform: rotate(19.49deg) scale(3);;
-    z-index: 1;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 130%;
-    height: 50%;
-    top: -20%;
-    left: 0;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    opacity: 0.4;
-    transform: rotate(13.54deg) scale(3);
-    z-index: 2;
-  }
+  //&::after {
+  //  content: '';
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 100%;
+  //  background: linear-gradient(180deg, rgba(82, 157, 227, 0) 0%, #1775CC 91.15%);
+  //  transform: rotate(19.49deg) scale(3);;
+  //  z-index: 1;
+  //}
+  //
+  //&::before {
+  //  content: '';
+  //  position: absolute;
+  //  width: 130%;
+  //  height: 50%;
+  //  top: -20%;
+  //  left: 0;
+  //  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  //  opacity: 0.4;
+  //  transform: rotate(13.54deg) scale(3);
+  //  z-index: 2;
+  //}
 }
