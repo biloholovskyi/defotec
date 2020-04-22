@@ -13,7 +13,7 @@
 }
 
 .m-container {
-  max-width: 1460px;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
 }
@@ -22,8 +22,6 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -20px;
-  margin-right: -20px;
 }
 
 .m-col {
@@ -32,4 +30,16 @@
   padding: 0 20px;
   height: 100px;
   background-color: red;
+
+  &--2 {
+    max-width: calc(100% / 10 * 2)
+  }
+
+  &--3 {
+    max-width: calc(100% / 10 * 3)
+  }
+
+  &--5 {
+    max-width: calc(100% / 10 * 5)
+  }
 }
