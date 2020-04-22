@@ -1,0 +1,102 @@
+.fon-video {
+  background: #3586DC;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: linear-gradient(180deg, rgba(53, 134, 220, 0) 0%, #3586DC 82.81%);
+    transform: rotate(19.49deg) scale(4);
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: 200%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../media/image/volvo.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  * {
+    position: relative;
+    z-index: 20;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  .fon-video__info {
+    max-width: 575px;
+    width: 100%;
+    margin-right: 347px;
+
+    .fon-video__title {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+    }
+
+    .fon-video__text {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: #FFFFFF;
+      margin-bottom: 50px;
+      max-width: 487px;
+    }
+
+    .fon-video__number {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    .fon-video__logo {
+      object-position: center;
+      object-fit: contain;
+      width: 200px;
+      min-width: 200px;
+      height: 200px;
+      margin-right: 17px;
+    }
+
+    .fon-video__logo-text {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+    }
+  }
+}
