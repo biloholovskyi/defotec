@@ -2,87 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-
-  .first__content {
-    position: relative;
-    z-index: 20;
-    padding-left: 245px;
-
-    .first__text {
-      font-family: "Proxima Nova", sans-serif;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 24px;
-      letter-spacing: 0.05em;
-      color: #FFFFFF;
-      opacity: 0.5;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .first__title {
-      font-family: 'Bank Sans EF CY', sans-serif;
-      font-weight: 500;
-      font-size: 64px;
-      line-height: 77px;
-      letter-spacing: 0.02em;
-      color: #FFFFFF;
-      margin-top: -10px;
-      margin-bottom: 50px;
-    }
-
-    .first__buttons {
-      .first__button {
-        font-family: 'Proxima Nova', sans-serif;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: center;
-        color: #FFFFFF;
-        background-color: transparent;
-        cursor: pointer;
-        padding: 15px 20px;
-        border: 1px solid #FFFFFF;
-        border-radius: 35px;
-        transition: all .3s;
-        margin-right: 17px;
-        display: inline-block;
-        margin-bottom: 15px;
-
-        &:hover {
-          background-color: #fff;
-          color: #353535;
-        }
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-
-  .first__button-down-container {
-    position: initial;
-  }
-
-  .first__button-down {
-    position: absolute;
-    width: 86px;
-    height: 86px;
-    background-color: rgba(255, 255, 255, 0.05);
-    z-index: 20;
-    border: none;
-    border-radius: 50%;
-    bottom: 72px;
-    margin-left: 245px;
-    cursor: pointer;
-    background-size: 22px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../media/icon/arrow.svg);
-  }
 
   &::after {
     content: '';
@@ -104,5 +23,100 @@
     left: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 2;
+  }
+
+  * {
+    position: relative;
+    z-index: 5;
+  }
+
+  .first__container {
+    height: 100%;
+  }
+
+  .first__row {
+    height: 100%;
+  }
+
+  .first__text-wrapp {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .first__text {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: -411px;
+  }
+
+  .first__title {
+    font-family: 'Bank Sans EF CY', sans-serif;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+  }
+
+  .first__buttons {
+    .first__button {
+      font-family: 'Proxima Nova', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 15px 20px;
+      border: 1px solid #FFFFFF;
+      border-radius: 35px;
+      transition: all .3s;
+      margin-right: 17px;
+      display: inline-block;
+      margin-bottom: 15px;
+
+      &:hover {
+        background-color: #fff;
+        color: #353535;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .first__wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -15px;
+  }
+
+  .first__button-down {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: 20;
+    border: none;
+    border-radius: 50%;
+    bottom: 72px;
+    left: 0;
+    cursor: pointer;
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../media/icon/arrow.svg);
   }
 }
