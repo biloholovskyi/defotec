@@ -55,4 +55,16 @@ const fullPageStart = () => {
   })
 }
 
-export {fullPageNav, fullPageStart}
+const fullPageResize = () => {
+  sections.css({
+    'height' : 'auto',
+    'min-height' : 'auto',
+    'position' : 'relative',
+    'top' : 'auto',
+    'left' : 'auto',
+    'z-index' : '50',
+    'opacity' : '1'
+  })
+}
+
+export {fullPageNav, fullPageStart, fullPageResize}

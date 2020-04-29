@@ -1,5 +1,5 @@
 import 'normalize.css';
-import {fullPageNav, fullPageStart} from "./fullpageNav";
+import {fullPageNav, fullPageStart, fullPageResize} from "./fullpageNav";
 
 $(document).ready(function() {
   fullPageStart();
@@ -8,5 +8,9 @@ $(document).ready(function() {
 });
 
 $(window).resize(function () {
-
+  // if($(window).width() < 992) {
+  //   fullPageResize();
+  // } else {
+  //   fullPageStart();
+  // }
 });

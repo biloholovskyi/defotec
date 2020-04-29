@@ -157,3 +157,54 @@
     max-width: calc(100% / 10 * 10)
   }
 }
+
+// xs
+@media (max-width: 760px) {
+  .m-container {
+    max-width: 100%;
+  }
+
+  .m-col {
+    padding: 0 15px;
+  }
+
+  .m-col-xs--1 {
+    max-width: calc(100% / 10 * 1)
+  }
+
+  .m-col-xs--2 {
+    max-width: calc(100% / 10 * 2)
+  }
+
+  .m-col-xs--3 {
+    max-width: calc(100% / 10 * 3)
+  }
+
+  .m-col-xs--4 {
+    max-width: calc(100% / 10 * 4)
+  }
+
+  .m-col-xs--5 {
+    max-width: calc(100% / 10 * 5)
+  }
+
+  .m-col-xs--6 {
+    max-width: calc(100% / 10 * 6)
+  }
+
+  .m-col-xs--7 {
+    max-width: calc(100% / 10 * 7)
+  }
+
+  .m-col-xs--8 {
+    max-width: calc(100% / 10 * 8)
+  }
+
+  .m-col-xs--9 {
+    max-width: calc(100% / 10 * 9)
+  }
+
+  .m-col-xs--10 {
+    max-width: calc(100% / 10 * 10)
+  }
+}

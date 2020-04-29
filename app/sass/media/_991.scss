@@ -9,7 +9,7 @@
 
   .fullPage {
     height: auto;
-    min-height: 100vh;
+    min-height: auto;
     position: relative;
     top: auto;
     left: auto;
@@ -75,6 +75,7 @@
   // first block
   .home__first {
     height: 100%;
+    min-height: 100vh;
 
     .first__text {
       font-size: 14px;
@@ -137,4 +138,22 @@
     }
   }
   // home about end
+
+  // industry
+  .industry {
+    padding-top: 25px;
+
+    .industry__left {
+      .alert-block {
+        display: none;
+      }
+    }
+  }
+  // industry end
+
+  // fon video
+  .fon-video {
+    min-height: 100vh;
+  }
+  // fon video end
 }
