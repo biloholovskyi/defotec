@@ -24,6 +24,7 @@ const fullPageNav = (e) => {
 
       // переключение блока
       const index = +e.target.getAttribute('data-number') - 1;
+      const numberStatus = e.target.getAttribute('data-anim'); // для прокрутки номера
       $('.fullPageNav__item').removeClass('fullPageNav__item--active');
       $('.fullPage--active').css({
         'opacity': '0'
@@ -43,6 +44,10 @@ const fullPageNav = (e) => {
         animBlock.removeAttr('style');
         animBlockItem.removeClass('anim-block__item--show');
         wrapper.removeAttr('status');
+
+        if(numberStatus) {
+          numberRoll();
+        }
       }, 2000);
     }
   }
@@ -64,6 +69,20 @@ const fullPageResize = () => {
     'left' : 'auto',
     'z-index' : '50',
     'opacity' : '1'
+  })
+}
+
+const numberRoll = () => {
+  $('.anim-number').each(function () {
+    $(this).prop('Counter', 0).animate({
+      Counter: $(this).text()
+    }, {
+      duration: 2000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.ceil(now));
+      }
+    })
   })
 }
 
