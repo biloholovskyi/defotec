@@ -99,6 +99,10 @@
   // first block end
 
   // home about
+  .about__particle {
+    display: none;
+  }
+
   .home__about {
     padding: 100px 0;
     display: block;
