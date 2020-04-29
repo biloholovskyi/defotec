@@ -58,6 +58,46 @@
   .m-container {
     max-width: 1200px;
   }
+
+  .m-col-lg--1 {
+    max-width: calc(100% / 10 * 1)
+  }
+
+  .m-col-lg--2 {
+    max-width: calc(100% / 10 * 2)
+  }
+
+  .m-col-lg--3 {
+    max-width: calc(100% / 10 * 3)
+  }
+
+  .m-col-lg--4 {
+    max-width: calc(100% / 10 * 4)
+  }
+
+  .m-col-lg--5 {
+    max-width: calc(100% / 10 * 5)
+  }
+
+  .m-col-lg--6 {
+    max-width: calc(100% / 10 * 6)
+  }
+
+  .m-col-lg--7 {
+    max-width: calc(100% / 10 * 7)
+  }
+
+  .m-col-lg--8 {
+    max-width: calc(100% / 10 * 8)
+  }
+
+  .m-col-lg--9 {
+    max-width: calc(100% / 10 * 9)
+  }
+
+  .m-col-lg--10 {
+    max-width: calc(100% / 10 * 10)
+  }
 }
 
 // md

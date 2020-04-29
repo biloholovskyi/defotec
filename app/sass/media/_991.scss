@@ -156,4 +156,41 @@
     min-height: 100vh;
   }
   // fon video end
+
+  // home man
+  .home-man {
+    padding-top: 180px;
+    min-height: 100vh;
+  }
+
+  .home-man__nav {
+    padding-bottom: 50px;
+  }
+
+  .home-man__list {
+    padding-bottom: 50px;
+  }
+  // home man end
+
+  // map
+  .map {
+    padding: 100px 0;
+  }
+  // map end
+
+  // partner
+  .partner {
+    padding: 180px 0 70px;
+  }
+
+  .partner__alert {
+    .alert-block {
+      display: none;
+    }
+  }
+
+  .partner__fon-img {
+    width: 500px;
+  }
+  // partner end
 }
