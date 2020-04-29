@@ -4,7 +4,8 @@ import './particles';
 
 $(document).ready(function() {
   fullPageStart();
-  particlesJS.load('about__particle', 'particles.json', function() {});
+  particlesJS.load('particle', 'particles.json', function() {});
+  particlesJS.load('particle-2', 'particles.json', function() {});
 
   $('.fullPageNav__item, .first__button-down').on('click', (e) => fullPageNav(e));
 });

@@ -1,4 +1,8 @@
 @media screen and (max-width: 991px) {
+  .particle {
+    display: none;
+  }
+
   // full page
   body,
   html {
@@ -99,10 +103,6 @@
   // first block end
 
   // home about
-  .about__particle {
-    display: none;
-  }
-
   .home__about {
     padding: 100px 0;
     display: block;
