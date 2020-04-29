@@ -3,6 +3,10 @@
   display: flex;
   align-items: center;
 
+  .m-container {
+    padding-top: 100px;
+  }
+
   .about__title {
     font-family: 'Bank Sans EF CY', sans-serif;
     font-weight: 500;

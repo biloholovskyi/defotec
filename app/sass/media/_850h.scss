@@ -1,0 +1,17 @@
+@media screen and (max-height: 850px) {
+  .map__big-text {
+    .alert-block {
+      display: none;
+    }
+  }
+
+  .home-man__about {
+    margin-bottom: 50px;
+  }
+
+  .home__about {
+    .m-container {
+      padding-top: 0;
+    }
+  }
+}
