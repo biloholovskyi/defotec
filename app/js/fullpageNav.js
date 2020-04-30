@@ -1,6 +1,6 @@
 const sections = $('.fullPage');
 
-const fullPageNav = (e) => {
+const fullPageNav = (e, status = false,) => {
   if($(window).width() > 991) {
     const wrapper = $('.fullPageNav');
     const animBlock = $('.anim-block');
@@ -8,6 +8,16 @@ const fullPageNav = (e) => {
     if(wrapper.attr('status') !== 'process') {
       wrapper.attr('status', 'process');
       // включение анимации
+      $('#prelouder').css({
+        'opacity': '1',
+        'z-index': '999999999'
+      });
+      setTimeout(() => {
+        $('#prelouder').css({
+          'opacity': '0'
+        });
+      }, 800)
+
       animBlock.css({
         'z-index': '9999'
       });
@@ -23,8 +33,8 @@ const fullPageNav = (e) => {
       }, 500);
 
       // переключение блока
-      const index = +e.target.getAttribute('data-number') - 1;
-      const numberStatus = e.target.getAttribute('data-anim'); // для прокрутки номера
+      const index = status ? 0 : +e.target.getAttribute('data-number') - 1;
+      const numberStatus = status ? false : e.target.getAttribute('data-anim'); // для прокрутки номера
       $('.fullPageNav__item').removeClass('fullPageNav__item--active');
       $('.fullPage--active').css({
         'opacity': '0'
@@ -37,27 +47,46 @@ const fullPageNav = (e) => {
         $('.fullPage--active').css('z-index', '-1').removeClass('fullPage--active');
         $('.fullPage').eq(index).addClass('fullPage--active');
       }, 900);
-      e.target.classList.add('fullPageNav__item--active');
+      if(status) {
+        $('.fullPageNav__item').eq(0).addClass('fullPageNav__item--active')
+      } else {
+        e.target.classList.add('fullPageNav__item--active');
+      }
 
       // показ блока
       setTimeout(() => {
         animBlock.removeAttr('style');
         animBlockItem.removeClass('anim-block__item--show');
         wrapper.removeAttr('status');
+        $('#prelouder').css({
+          'z-index': '-1'
+        });
 
         if(numberStatus) {
           numberRoll();
         }
       }, 2000);
     }
+  } else {
+    setTimeout(() => {
+      $('#prelouder').css({
+        'opacity': '0'
+      })
+    }, 1000);
+    setTimeout(() => {
+      $('#prelouder').css({
+        'z-index': '-1'
+      })
+    }, 2000)
   }
 }
 
-const fullPageStart = () => {
+const fullPageStart = (e) => {
   sections.eq(0).addClass('fullPage--active').css({
     'z-index': '50',
     'opacity': '1'
-  })
+  });
+  fullPageNav(e, true);
 }
 
 const fullPageResize = () => {
