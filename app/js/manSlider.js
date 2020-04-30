@@ -59,15 +59,28 @@ const manSliderClick = (e) => {
   const index = current.index();
   $('.home-man__list .item--active').removeClass('item--active');
   current.addClass('item--active');
+  // photos
+  bigPhotos.fadeOut('fast').removeClass('home-man__big-img--current');
+  if($(window).width() > 991) {
+    setTimeout(() => {
+      bigPhotos.eq(index).fadeIn('slow').addClass('home-man__big-img--current');
+      names.eq(index).fadeIn('slow').addClass('home-man__name--current');
+      posts.eq(index).fadeIn('slow').addClass('home-man__post--current');
+      abouts.eq(index).fadeIn('slow').addClass('home-man__about--current');
+    }, 200)
+  } else {
+    bigPhotos.eq(index).fadeIn('slow').addClass('home-man__big-img--current');
+    names.eq(index).fadeIn('slow').addClass('home-man__name--current');
+    posts.eq(index).fadeIn('slow').addClass('home-man__post--current');
+    abouts.eq(index).fadeIn('slow').addClass('home-man__about--current');
+  }
+
   // name
   names.fadeOut('fast').removeClass('home-man__name--current');
-  names.eq(index).fadeIn('slow').addClass('home-man__name--current');
   // post
   posts.fadeOut('fast').removeClass('home-man__post--current');
-  posts.eq(index).fadeIn('slow').addClass('home-man__post--current');
   // about
   abouts.fadeOut('fast').removeClass('home-man__about--current');
-  abouts.eq(index).fadeIn('slow').addClass('home-man__about--current');
 }
 
 
