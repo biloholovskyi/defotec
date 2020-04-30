@@ -1,4 +1,18 @@
 @media screen and (max-width: 575px) {
+  // main modal
+  .main-modal__body {
+    .modal-desc__text {
+      flex-direction: column;
+    }
+
+    .modal-form {
+      .modal-submit {
+        width: 100%;
+      }
+    }
+  }
+  // main modal end
+
   // first block
   .home__first {
     .first__wrapper {

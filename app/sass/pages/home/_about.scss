@@ -81,6 +81,16 @@
       margin-left: -137.5px;
     }
 
+    .about__videoblock {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
     .video__play {
       background-image: url(../media/icon/play.svg);
       width: 43.88px;

@@ -1,4 +1,47 @@
 @media screen and (max-width: 760px) {
+  //main modal
+  .main-modal__body {
+    max-height: 90%;
+    width: 90%;
+    overflow: auto;
+    padding: 30px 15px;
+
+    .modal-body__close {
+      top: 15px;
+      right: 15px;
+      filter: brightness(0);
+      width: 20px;
+      height: 20px;
+    }
+
+    .modal-body__title {
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    .modal-desc__text {
+      font-size: 14px;
+    }
+
+    .modal-desc__small-text {
+      font-size: 12px;
+    }
+
+    .modal-form {
+      width: 100%;
+      min-width: 100%;
+    }
+
+    .modal-political {
+      margin-top: 25px;
+
+      .political__text {
+        font-size: 10px;
+      }
+    }
+  }
+  //main modal end
+
   .industry {
     .industry__title {
       font-size: 36px;

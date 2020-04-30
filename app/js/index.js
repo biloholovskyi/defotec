@@ -3,6 +3,7 @@ import {fullPageNav, fullPageStart, fullPageResize} from "./fullpageNav";
 import './particles';
 import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
+import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from "./modalForm";
 
 $(document).ready(function() {
   fullPageStart();
@@ -14,6 +15,10 @@ $(document).ready(function() {
   $('.home-man__nav .prev').on('click', manSliderNext);
   $('.home-man__list .item').on('click', (e) => manSliderClick(e));
   $('.header__humb').on('click', toggleMobileMenu);
+  $('.modal-desc__text .text-check').on('click', (e) => switchModalType(e));
+  $('.political__check').on('click', disabledPolitical);
+  $('.modal-body__close').on('click', closeModalForm);
+  $('.main-modal-show').on('click', openModalForm);
 });
 
 
