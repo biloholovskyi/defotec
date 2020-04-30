@@ -56,9 +56,11 @@ block content
           a(href='#').about__link О компании
         .m-col.m-col--4.m-col-sm--10
           .about__video
-            .video__poster
+            .about__video-bg
+            .about__video-close
+            video.about__videoblock#about-video(src='./media/video/about.mp4' playsinline muted autoplay loop preload="" controls)
             .video__play
-            .video__time 2:23
+            .video__time 4:01
         .m-col.m-col--3.m-col-sm--10
           .about__numbers
             .about__number.anim-number 5800

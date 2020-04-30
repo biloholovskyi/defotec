@@ -4,6 +4,7 @@ import './particles';
 import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
 import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from "./modalForm";
+import {play, close} from "./aboutVideo";
 
 $(document).ready(function() {
   fullPageStart();
@@ -19,6 +20,8 @@ $(document).ready(function() {
   $('.political__check').on('click', disabledPolitical);
   $('.modal-body__close').on('click', closeModalForm);
   $('.main-modal-show').on('click', openModalForm);
+  $('.about__video').on('click', play);
+  $('.about__video-close').on('click', close);
 });
 
 
