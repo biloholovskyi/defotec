@@ -40,6 +40,11 @@
     line-height: 58px;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    display: none;
+
+    &--current {
+      display: block;
+    }
   }
 
   &__post {
@@ -51,6 +56,11 @@
     color: #FFFFFF;
     opacity: 0.5;
     margin-bottom: 55px;
+    display: none;
+
+    &--current {
+      display: block;
+    }
   }
 
   &__about {
@@ -61,6 +71,11 @@
     line-height: 27px;
     color: #FFFFFF;
     margin-bottom: 200px;
+    display: none;
+
+    &--current {
+      display: block;
+    }
   }
 
   &__nav {
@@ -119,6 +134,11 @@
     width: 100%;
     object-fit: contain;
     object-position: center;
+    display: none;
+
+    &--current {
+      display: block;
+    }
   }
 
   &__list {
