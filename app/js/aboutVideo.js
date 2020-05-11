@@ -55,7 +55,6 @@ const play = () => {
       });
 
       video[0].muted = false;
-      // video[0].controls = true;
     }, 100)
 
     setTimeout(() => {
