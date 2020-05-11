@@ -101,6 +101,12 @@ const fullPageResize = () => {
   })
 }
 
+const mobileScroll = () => {
+  $('html, body').animate({
+    scrollTop: $(window).height()
+  }, 500);
+}
+
 const numberRoll = () => {
   $('.anim-number').each(function () {
     $(this).prop('Counter', 0).animate({
@@ -115,4 +121,15 @@ const numberRoll = () => {
   })
 }
 
-export {fullPageNav, fullPageStart, fullPageResize}
+const switchScroll = (e) => {
+  e = e || window.event;
+  if($(window).width() > 991) {
+    const delta = e.deltaY || e.detail || e.wheelDelta;
+    console.log(delta);
+    if(delta > 300) {
+
+    }
+  }
+}
+
+export {fullPageNav, fullPageStart, fullPageResize, mobileScroll, switchScroll}

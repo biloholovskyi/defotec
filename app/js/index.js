@@ -1,5 +1,5 @@
 import 'normalize.css';
-import {fullPageNav, fullPageStart, fullPageResize} from "./fullpageNav";
+import {fullPageNav, fullPageStart, fullPageResize, mobileScroll, switchScroll} from "./fullpageNav";
 import './particles';
 import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
@@ -22,6 +22,29 @@ $(document).ready(function() {
   $('.main-modal-show').on('click', openModalForm);
   $('.about__video').on('click', play);
   $('.about__video-close').on('click', close);
+
+  $('.first__button-down').on('click', () => {
+    if($(window).width() < 992) {
+      mobileScroll();
+    }
+  });
+
+  // document.querySelectorAll('.fullPage').forEach((elem) => {
+  //   if (elem.addEventListener) {
+  //     if ('onwheel' in document) {
+  //       // IE9+, FF17+
+  //       elem.addEventListener("wheel", switchScroll);
+  //     } else if ('onmousewheel' in switchScroll) {
+  //       // устаревший вариант события
+  //       elem.addEventListener("mousewheel", switchScroll);
+  //     } else {
+  //       // Firefox < 17
+  //       elem.addEventListener("MozMousePixelScroll", switchScroll);
+  //     }
+  //   } else { // IE8-
+  //     elem.attachEvent("onmousewheel", switchScroll);
+  //   }
+  // });
 });
 
 
