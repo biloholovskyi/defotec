@@ -1,0 +1,25 @@
+@media screen and (max-height: 550px) {
+  .home__first {
+    .first__text {
+      margin-top: -265px;
+    }
+
+    .first__wrapper {
+      .first__title {
+        font-size: 36px;
+        line-height: 120%;
+      }
+    }
+
+    .first__buttons {
+      margin-top: 30px;
+    }
+
+    .first__button-down {
+      width: 40px;
+      height: 40px;
+      background-size: 10px;
+      bottom: 30px;
+    }
+  }
+}
