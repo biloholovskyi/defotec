@@ -106,11 +106,11 @@
         filter: brightness(0);
         transition: all .3s;
       }
-    }
 
-    .disabled {
-      &::after {
-        filter: none;
+      &:hover {
+        &::after {
+          filter: none;
+        }
       }
     }
 

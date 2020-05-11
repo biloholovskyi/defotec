@@ -161,6 +161,11 @@
         line-height: 120%;
         text-align: center;
         color: #FFFFFF;
+        transition: all .3s;
+
+        &:hover {
+          background: #276DB8;
+        }
       }
     }
 

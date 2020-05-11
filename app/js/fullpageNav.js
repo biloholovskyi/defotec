@@ -39,10 +39,6 @@ const fullPageNav = (e, status = false,) => {
       $('.fullPage--active').css({
         'opacity': '0'
       });
-      $('.fullPage').eq(index).css({
-        'opacity': '1',
-        'z-index': '50'
-      });
       setTimeout(() => {
         $('.fullPage--active').css('z-index', '-1').removeClass('fullPage--active');
         $('.fullPage').eq(index).addClass('fullPage--active');
@@ -65,6 +61,10 @@ const fullPageNav = (e, status = false,) => {
         if(numberStatus) {
           numberRoll();
         }
+        $('.fullPage').eq(index).css({
+          'opacity': '1',
+          'z-index': '50'
+        });
       }, 2000);
     }
   } else {

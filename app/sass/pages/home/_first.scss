@@ -118,5 +118,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../media/icon/arrow.svg);
+    transition: all .3s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
   }
 }
