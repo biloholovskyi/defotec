@@ -6,6 +6,8 @@ import {toggleMobileMenu} from "./mobileMenu";
 import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from "./modalForm";
 import {play, close} from "./aboutVideo";
 import './accordion';
+import './owl.carousel';
+import './productSlider';
 
 $(document).ready(function() {
   fullPageStart();
@@ -46,7 +48,9 @@ $(document).ready(function() {
   //     elem.attachEvent("onmousewheel", switchScroll);
   //   }
   // });
+      
 });
+
 
 
 $(window).resize(function () {
