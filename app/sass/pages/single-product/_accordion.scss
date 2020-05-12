@@ -1,0 +1,48 @@
+.accordion-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    button.accordion{
+        background-color: transparent;
+        color: #3C3C3B;
+        cursor: pointer;
+        padding: 20px 0;
+        text-align: left;
+        font-family: Bank Sans EF CY;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+        line-height: 24px;
+        color: #3C3C3B;
+        border: none;
+        border-bottom: 2px solid #E0E0E0;
+        position: relative;
+        transition: 1s all;
+    }
+    button.accordion:first-child {
+        border-top: 2px solid #E0E0E0; 
+    }
+    button.accordion svg {
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    div.panel {
+        display: none;
+        padding: 15px 0;
+        transition: .5s all;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+    div.panel.show {
+        display: block;
+        
+    }
+}

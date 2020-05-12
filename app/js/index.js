@@ -5,11 +5,12 @@ import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
 import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from "./modalForm";
 import {play, close} from "./aboutVideo";
+import './accordion';
 
 $(document).ready(function() {
   fullPageStart();
   particlesJS.load('particle', 'particles.json', function() {});
-  particlesJS.load('particle-2', 'particles.json', function() {});
+  particlesJS.load('particle-2', 'particles.json', function() {}); 
 
   $('.fullPageNav__item, .first__button-down').on('click', (e) => fullPageNav(e));
   $('.home-man__nav .next').on('click', () => manSliderNext('next'));
@@ -27,7 +28,7 @@ $(document).ready(function() {
     if($(window).width() < 992) {
       mobileScroll();
     }
-  });
+  }); 
 
   // document.querySelectorAll('.fullPage').forEach((elem) => {
   //   if (elem.addEventListener) {

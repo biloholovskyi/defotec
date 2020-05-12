@@ -37,6 +37,7 @@ button {
 
 /*over use blocks*/
 @import "header";
+@import "header-white";
 @import "footer";
 
 /*pages*/
@@ -49,6 +50,8 @@ button {
 @import "pages/home/fon-video";
 @import "pages/home/home-man";
 @import "pages/home/partner";
+@import "pages/single-product/single-product";
+@import "pages/single-product/accordion";
 
 /*media*/
 @import "media/920h";
