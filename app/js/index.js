@@ -1,5 +1,5 @@
 import 'normalize.css';
-import {fullPageNav, fullPageStart, fullPageResize, mobileScroll, switchScroll} from "./fullpageNav";
+import {fullPageNav, fullPageStart, fullPageResize, mobileScroll, switchScroll, stopScroll} from "./fullpageNav";
 import './particles';
 import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
@@ -30,22 +30,23 @@ $(document).ready(function() {
     }
   }); 
 
-  // document.querySelectorAll('.fullPage').forEach((elem) => {
-  //   if (elem.addEventListener) {
-  //     if ('onwheel' in document) {
-  //       // IE9+, FF17+
-  //       elem.addEventListener("wheel", switchScroll);
-  //     } else if ('onmousewheel' in switchScroll) {
-  //       // устаревший вариант события
-  //       elem.addEventListener("mousewheel", switchScroll);
-  //     } else {
-  //       // Firefox < 17
-  //       elem.addEventListener("MozMousePixelScroll", switchScroll);
-  //     }
-  //   } else { // IE8-
-  //     elem.attachEvent("onmousewheel", switchScroll);
-  //   }
-  // });
+  document.querySelectorAll('.fullPage').forEach((elem) => {
+    if (elem.addEventListener) {
+      if ('onwheel' in document) {
+        // IE9+, FF17+
+        elem.addEventListener("wheel", switchScroll);
+      } else if ('onmousewheel' in switchScroll) {
+        // устаревший вариант события
+        elem.addEventListener("mousewheel", switchScroll);
+      } else {
+        // Firefox < 17
+        elem.addEventListener("MozMousePixelScroll", switchScroll);
+      }
+    } else { // IE8-
+      elem.attachEvent("onmousewheel", switchScroll);
+    }
+  });
+  $('.out-scroll').on('scroll', stopScroll);
 });
 
 
