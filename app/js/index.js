@@ -30,7 +30,7 @@ $(document).ready(function() {
     if($(window).width() < 992) {
       mobileScroll();
     }
-  }); 
+  });  
 
   // document.querySelectorAll('.fullPage').forEach((elem) => {
   //   if (elem.addEventListener) {

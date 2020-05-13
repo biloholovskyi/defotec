@@ -1,7 +1,9 @@
 .products{
-    padding: 180px 0 140px;
+    padding: 220px 0 140px;
     background: #F9F9F9;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
     .products-title {
         text-align: center;
         h1 {
@@ -13,7 +15,8 @@
             text-align: center;
             letter-spacing: -0.02em;
             color: #3C3C3B;
-            margin-bottom: 100px;
+            margin-bottom: 120px;
+            margin-top: 0;
         }
     }
     .product-slider {
@@ -29,12 +32,13 @@
                     margin: 0 auto;
                     transition: .4s;
                     .hidden-block {
+                        
                         display: none;
                         position: relative;
                         width: 224px;
                         height: 340px;
                         margin: 0 auto;
-                        transition: .4s;
+                        transition: .4s all;
                         .hidden-img {
                             width: 100%;
                             height: 100%;
@@ -48,7 +52,7 @@
                             right: -31px;
                             width: 80px;
                             height: 80px;
-                            transition: .4s;
+                            transition: .4s all;
                         }
                     }
                     .hidden-text {
@@ -58,16 +62,16 @@
                         font-size: 30px;
                         line-height: 120%;
                         color: #3586DC;
-                        margin-top: 16px;
+                        margin-top: 12px;
                         display: none;
-                        transition: .4s;
+                        transition: .4s all;
                     }
                     h2 {
                         font-family: Bank Sans EF CY;
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 50px;
-                        line-height: 67px;
+                        font-size: 40px;
+                        line-height: 60px;
                         color: #3C3C3B;
                     }
     
@@ -78,19 +82,23 @@
                         object-position: center;
                         margin: 0 auto;
                         margin-bottom: 25px;
+                        transition: .4s all;
                         
                     }
                 }
 
                 .slider-content:hover .hidden-block{
+                    
                     display: block;
-                    transition: .4s;
+                    transition: .4s all;
                 }
                 .slider-content:hover .hidden-text{
                     display: block;
+                    transition: .4s all;
                 }
                 .slider-content:hover .img-elem{
                     display: none;
+                    transition: .4s all;
                 }
             }
         }
@@ -99,17 +107,32 @@
 
 .opacity-block,
 .opacity-block2 {
-    width: 380px;
+    width: 100%;
     height: 380px;
     position: absolute;
-    top: 50%;
     transform: translateY(-50%) rotate(90deg);
     background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #F9F9F9 63.02%);
     opacity: 0.8;
     z-index: 10;
-    right: 0;
+    right: 40%;
 }
 
 .opacity-block2 {
-    left: 0;
+    transform: translateY(50%) rotate(-90deg);
+    left: 40%;
+}
+
+.product_back_btn {
+    cursor: pointer;
+    z-index: 12;
+    position: relative;
+    left: 60px;
+}
+.product_back_btn svg {
+    width: 28px; 
+    height: 28px;
+    position: absolute;
+}
+.product_back_btn:hover svg path {
+    fill: #3586DC;
 }

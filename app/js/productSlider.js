@@ -4,10 +4,7 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav:true,
-        items:3
+        items: 3
     });
-
-
-    
 
 });

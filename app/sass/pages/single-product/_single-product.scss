@@ -1,7 +1,8 @@
 .product-page {
-    padding-top: 200px;
+    padding-top: 216px;
     background-color: #F9F9F9;
     position: relative;
+    overflow-x: hidden;
     .product_back_btn {
         font-family: Proxima Nova;
         font-style: normal;
@@ -69,7 +70,7 @@
             letter-spacing: -0.02em;
             color: #3C3C3B; 
             margin-top: 0;
-            margin-bottom: 46px;   
+            margin-bottom: 80px;   
         }
     }
     .product-desc {
@@ -90,7 +91,7 @@
             font-family: Proxima Nova;
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
+            font-size: 18px;
             line-height: 27px;
             color: #757575;
             margin-bottom: 50px;
