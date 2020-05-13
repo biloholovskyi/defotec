@@ -12,6 +12,8 @@
     &__nav {
       .nav__link {
         margin-right: 20px;
+        font-size: 16px;
+        line-height: 120%;
       }
     }
 
@@ -265,6 +267,7 @@
   .partner__alert {
     .alert-block {
       padding: 20px;
+      padding-right: 34px;
 
       .number {
         font-size: 40px;
