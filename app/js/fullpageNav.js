@@ -59,6 +59,8 @@ const fullPageNav = (e, status = false,) => {
           'z-index': '-1'
         });
 
+        $('.prelouder-logo').css('opacity', '0');
+
         if(numberStatus) {
           numberRoll();
         }

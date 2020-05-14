@@ -47,6 +47,14 @@ $(document).ready(function() {
     }
   });
   $('.out-scroll').on('scroll', stopScroll);
+
+  // close modal
+  $('body').on('click', (e) => {
+    const modal = $('.main-modal__body, .main-modal-show');
+    if (!modal.is(e.target) && modal.has(e.target).length === 0) {
+      closeModalForm();
+    }
+  })
 });
 
 
