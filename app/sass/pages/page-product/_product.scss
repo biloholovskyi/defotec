@@ -1,5 +1,5 @@
 .products{
-    padding: 220px 0 140px;
+    padding: 200px 0 140px;
     background: #F9F9F9;
     height: 100vh;
     position: relative;
@@ -15,7 +15,7 @@
             text-align: center;
             letter-spacing: -0.02em;
             color: #3C3C3B;
-            margin-bottom: 120px;
+            margin-bottom: 80px;
             margin-top: 0;
         }
     }
@@ -32,11 +32,11 @@
                     margin: 0 auto;
                     transition: .4s;
                     .hidden-block {
-                        
-                        display: none;
+                        transform: scale(0);
+                        // display: none;
                         position: relative;
                         width: 224px;
-                        height: 340px;
+                        height: 0px;
                         margin: 0 auto;
                         transition: .4s all;
                         .hidden-img {
@@ -56,14 +56,15 @@
                         }
                     }
                     .hidden-text {
-                        font-family: Bank Sans EF CY;
+                        font-family: Bank Sans EF CY; 
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 30px;
+                        font-size: 0px;
                         line-height: 120%;
                         color: #3586DC;
                         margin-top: 12px;
-                        display: none;
+                        // display: none;
+                      
                         transition: .4s all;
                     }
                     h2 {
@@ -80,25 +81,28 @@
                         height: 68px;
                         object-fit: cover;
                         object-position: center;
-                        margin: 0 auto;
+                        margin: 50px auto;
                         margin-bottom: 25px;
                         transition: .4s all;
                         
                     }
                 }
-
+                
                 .slider-content:hover .hidden-block{
-                    
-                    display: block;
-                    transition: .4s all;
+                    transform: scale(1);
+                    height: 340px;
+                    // display: block;
+                    transition: .6s all;
                 }
                 .slider-content:hover .hidden-text{
-                    display: block;
+                    font-size: 30px;
+                    // display: block;
                     transition: .4s all;
                 }
                 .slider-content:hover .img-elem{
-                    display: none;
-                    transition: .4s all;
+                    height: 0;
+                    // display: none;
+                    transition: .2s all;
                 }
             }
         }

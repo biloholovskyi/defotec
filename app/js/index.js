@@ -6,7 +6,7 @@ import {toggleMobileMenu} from "./mobileMenu";
 import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from "./modalForm";
 import {play, close} from "./aboutVideo";
 import './accordion';
-import './owl.carousel';
+import './owl.carousel.min';
 import './productSlider';
 
 $(document).ready(function() {
@@ -48,6 +48,9 @@ $(document).ready(function() {
   //     elem.attachEvent("onmousewheel", switchScroll);
   //   }
   // });
+
+
+ 
       
 });
 
