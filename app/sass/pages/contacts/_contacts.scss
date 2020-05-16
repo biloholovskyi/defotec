@@ -1,8 +1,7 @@
 .contacts {
     width: 100%;
-    background: #3586DC;
+    background: #3586dc;
     padding-top: 235px;
-    height: 100%;
     .contacts-title {
         h1 {
             font-family: Bank Sans EF CY;
@@ -17,7 +16,7 @@
             margin-bottom: 50px;
         }
     }
-    .content-row {
+    .content-row { 
         border-bottom: 2px solid #4594E8;
         margin-bottom: 60px;
         .contacts-content {
@@ -72,7 +71,7 @@
         .contact-info {
             display: flex;
             flex-direction: column;
-            margin-bottom: 80px;
+           
             p {
                 font-family: Proxima Nova;
                 font-style: normal;
@@ -89,7 +88,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
-                color: #FFFFFF;
+                color: #FFFFFF; 
                
             }
         }

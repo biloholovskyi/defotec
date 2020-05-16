@@ -13,8 +13,8 @@ block content
     section(style='background-image: url(./media/image/servis_bg.png)').servis
         .m-container
             .m-row
-                .m-col.m-col--5
-                    .servis-content
+                .m-col.m-col--5.m-col-md--10
+                    .servis-content.anhors  
                         h1 Сервисная служба
                         p Одним из главных достоинств компании “Дефотек” является сервисная служба, специалисты которой обеспечивают техническое сопровождение клиентов и готовы в любой момент прийти на помощь технологам, работающим на сахарных заводах.
                         .about__numbers.servis__numbers
@@ -24,14 +24,14 @@ block content
                             .servis__number.second-block.anim-number 7 
                             .servis__desc #[sup дней в неделю]
                             
-                        button.servis__button-down   
+                        a(href="#servis").servis__button-down 
 
                 .m-col.m-col--5   
 
-    section.our_servis
+    section.our_servis#servis
         .m-container
             .m-row
-                .m-col.m-col--5
+                .m-col.m-col--5.m-col-sm--10
                     .our_servis--text
                         h2 Наши услуги
                         p Анализ солей кальция и тепловой схемы
@@ -41,7 +41,7 @@ block content
                         p  Контроль параметров работы ВУ 
                         p Оперативный выезд специалиста сервисной службы     
                 .m-col.m-col--2  
-                .m-col.m-col--3
+                .m-col.m-col--3.m-col-sm--10
                     .our_servis--text2
                         p Инженеры сервисной службы помогут разобраться в выборе технологических добавок и проконсультируют, как и за счет чего можно сократить издержки производства.
                         p.small-desc #[span Технологическое совершенство] наших продуктов и техническое мастерство сервисной службы дарит нашим клиентам железную уверенность каждый производственный день.
@@ -58,7 +58,7 @@ block content
                 .m-col.m-col--8
                     img.home-man__poligon(src='./media/icon/big-poligon.svg')
             .m-row
-                .m-col.m-col--4.m-col-xs--10.home-man__flex-wrapper
+                .m-col.m-col--3.m-col-xs--10.home-man__flex-wrapper
                     .home-man__text-icon.home-man-title Наши инженеры
                     h3.home-man__name.home-man__name__KD.home-man__name--current Константин Сахаровский
                     h3.home-man__name.home-man__name__KD Константин Сахаровский 2
@@ -77,7 +77,7 @@ block content
                         img.home-man__big-img.home-man__big-img--current(src='./media/image/man-big.png')
                         img.home-man__big-img.home-man__big-img--hidden(src='./media/image/photo.jpg')
                         img.home-man__big-img.home-man__big-img--hidden(src='./media/image/man-big.png')
-                .m-col.m-col--1.m-col-md--1.m-col-xs--10
+                .m-col.m-col--2.m-col-md--1.m-col-xs--10
                     .home-man__list
                         .item.item--active(style='background-image: url(./media/image/man-1.png)')
                         .item(style='background-image: url(./media/image/man-2.png)')

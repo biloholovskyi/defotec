@@ -62,7 +62,7 @@
     }
     .photo-team {
         width: 100%;
-        height: 837px;
+        height: 100%;
         img {
             width: 100%;
             height: 100%;
@@ -74,6 +74,7 @@
 .about_company{
     width: 100%;
     padding-top: 468px;
+    background-color: #fff;
     .about_company_info {
         p {
             font-family: Proxima Nova;
@@ -99,7 +100,7 @@
             max-width: 595px;
         }
     }
-    .company__right {
+    .company__right { 
         position: relative;
         height: 100%;
         .alert-block {
@@ -195,9 +196,9 @@
             }
         }
     }
-    .principles__video {
-        width: 255px;
-        height: 255px;
+    .about__video {
+        width: 350px;
+        height: 350px;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -209,9 +210,9 @@
         justify-content: center;
         margin-bottom: 100px;
     
-        .principles__video-bg {
+        .about__video-bg {
             position: absolute;
-            background-image: url(../media/image/.principles_video-bg.png);
+            background-image: url(../media/image/video-bg.png);
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -222,7 +223,7 @@
             z-index: 2;
             opacity: 1;
         }
-        .principles__video-close {
+        .about__video-close {
             position: absolute;
             top: 30px;
             right: 30px;
@@ -236,7 +237,7 @@
             z-index: 9999999999999;
             display: none;
         }
-        .principles__videoblock {
+        .about__videoblock {
             position: absolute;
             top: 0;
             left: 0;
@@ -273,7 +274,7 @@
         
     }
 
-    .principles__video--show {
+    .about__video--show {
         position: fixed !important;
         width: 100% !important;
         height: 100% !important;
@@ -289,7 +290,7 @@
         margin: 0 !important
     }
     
-    .principles__video--show .principles__video-close {
+    .about__video--show .about__video-close {
         display: block
     }
     .principles__right {

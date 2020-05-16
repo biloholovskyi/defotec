@@ -49,7 +49,14 @@ $(document).ready(function() {
   //   }
   // });
 
+  $('.anhors').on('click', 'a', (function(n){
+      n.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('html,body').animate({scrollTop: top}, 800);     
 
+
+  }));
  
       
 });

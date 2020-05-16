@@ -55,23 +55,25 @@
         }
        
         .servis__button-down {
-            
-            width: 86px;
-            height: 86px;
-            background-color: rgba(255, 255, 255, 0.05);
-            
-            border: none;
-            border-radius: 50%;
-            
+            position: relative;
             cursor: pointer;
-            background-size: 22px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-image: url(../media/icon/arrow.svg);
             transition: all .3s;
-        
+            bottom: 75px;
             &:hover {
               background-color: rgba(255, 255, 255, 0.15);
+            }
+
+            &:after{
+                content: ' ';
+                width: 86px;
+                height: 86px;
+                position: absolute;
+                background-size: 22px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url(../media/icon/arrow.svg);
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.05);
             }
           }
     }
