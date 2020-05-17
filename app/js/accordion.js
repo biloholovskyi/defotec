@@ -1,10 +1,11 @@
-let acc = document.getElementsByClassName('accordion');
-let i;
 
-for(i = 0; i < acc.length; i++){
-    acc[i].onclick = function(){
-        this.classList.toggle('active');
+$(document).ready(function() {
+    $('#accordeon .head').on('click', my_func);
+});
 
-        this.nextElementSibling.classList.toggle('show');
-    };
-};
+
+function my_func(){
+    $('#accordeon .hidden').not($(this).next());
+    $(this).next().toggleClass("active");
+
+}

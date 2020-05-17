@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+body,
+html {
+  // overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+>>>>>>> 3cd1b94f6e67ebff7f7cd7df3ba3d4cdff00c835
 a,
 a:hover,
 a:focus,
@@ -43,8 +53,25 @@ button {
 @import "pages/home/fon-video";
 @import "pages/home/home-man";
 @import "pages/home/partner";
+/*pages*/
+// single-page product
 @import "pages/single-product/single-product";
 @import "pages/single-product/accordion";
+/*pages*/
+// page products
+@import "pages/page-product/product";
+/*pages*/
+// servis
+@import "pages/servis/servis";
+@import "pages/servis/servis-slider";
+/*pages*/
+// contacts
+@import "pages/contacts/contacts";
+@import "pages/contacts/map";
+/*pages*/
+// contacts
+@import "pages/about/about";
+
 
 /*media*/
 @import "media/920h";

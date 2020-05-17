@@ -6,6 +6,8 @@ import {toggleMobileMenu} from "./mobileMenu";
 import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from "./modalForm";
 import {play, close} from "./aboutVideo";
 import './accordion';
+import './owl.carousel.min';
+import './productSlider';
 
 $(document).ready(function() {
   fullPageStart();
@@ -28,8 +30,7 @@ $(document).ready(function() {
     if($(window).width() < 992) {
       mobileScroll();
     }
-  }); 
-
+  });
   document.querySelectorAll('.fullPage').forEach((elem) => {
     if (elem.addEventListener) {
       if ('onwheel' in document) {
@@ -55,7 +56,15 @@ $(document).ready(function() {
       closeModalForm();
     }
   })
+
+  $('.anhors').on('click', 'a', (function(n){
+      n.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('html,body').animate({scrollTop: top}, 800);
+  }));
 });
+
 
 
 $(window).resize(function () {
