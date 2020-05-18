@@ -45,13 +45,6 @@ const manSliderNext = (button) => {
   listCurrent.removeClass('item--active');
   listNext.addClass('item--active');
   // переключение текста
-
-  // дизейбл кнопок
-  // if(button === 'next') {
-  //   bigCurrent.next('.home-man__big-img').length > 0 ? $('.home-man__nav .prev').removeClass('disabled') : $('.home-man__nav .prev').addClass('disabled');
-  // } else {
-  //   bigCurrent.prev('.home-man__big-img').length > 0 ? $('.home-man__nav .next').removeClass('disabled') : $('.home-man__nav .next').addClass('disabled');
-  // }
 }
 
 const manSliderClick = (e) => {
@@ -59,8 +52,10 @@ const manSliderClick = (e) => {
   const index = current.index();
   $('.home-man__list .item--active').removeClass('item--active');
   current.addClass('item--active');
-  // photos
   bigPhotos.fadeOut('fast').removeClass('home-man__big-img--current');
+  names.fadeOut('fast').removeClass('home-man__name--current');
+  posts.fadeOut('fast').removeClass('home-man__post--current');
+  abouts.fadeOut('fast').removeClass('home-man__about--current');
   if($(window).width() > 991) {
     setTimeout(() => {
       bigPhotos.eq(index).fadeIn('slow').addClass('home-man__big-img--current');
@@ -69,18 +64,13 @@ const manSliderClick = (e) => {
       abouts.eq(index).fadeIn('slow').addClass('home-man__about--current');
     }, 200)
   } else {
-    bigPhotos.eq(index).fadeIn('slow').addClass('home-man__big-img--current');
+    if($(window).width() > 760) {
+      bigPhotos.eq(index).fadeIn('slow').addClass('home-man__big-img--current');
+    }
     names.eq(index).fadeIn('slow').addClass('home-man__name--current');
     posts.eq(index).fadeIn('slow').addClass('home-man__post--current');
     abouts.eq(index).fadeIn('slow').addClass('home-man__about--current');
   }
-
-  // name
-  names.fadeOut('fast').removeClass('home-man__name--current');
-  // post
-  posts.fadeOut('fast').removeClass('home-man__post--current');
-  // about
-  abouts.fadeOut('fast').removeClass('home-man__about--current');
 }
 
 

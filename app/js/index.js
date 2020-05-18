@@ -8,9 +8,11 @@ import {play, close} from "./aboutVideo";
 import './accordion';
 import './owl.carousel.min';
 import './productSlider';
+import {changeWord} from "./changeWord";
 
 $(document).ready(function() {
   fullPageStart();
+  changeWord();
   particlesJS.load('particle', 'particles.json', function() {});
   particlesJS.load('particle-2', 'particles.json', function() {}); 
 

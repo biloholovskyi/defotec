@@ -67,6 +67,36 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 50px;
+    position: relative;
+
+    .word-wrapp {
+      position: relative;
+      overflow-y: hidden;
+      overflow-x: visible;
+      height: 64px;
+      display: inline-block;
+      transform: translateY(10px);
+      color: transparent;
+    }
+
+    &-word {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      opacity: .5;
+      transform: translateY(100%);
+      transition: all .6s;
+      color: #fff;
+
+      &--active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      &--top {
+        transform: translateY(-100%);
+      }
+    }
   }
 
   .first__buttons {

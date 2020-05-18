@@ -15,6 +15,13 @@
 
   // first block
   .home__first {
+    .first__title {
+      .word-wrapp {
+        height: 22px;
+        transform: translateY(5px);
+      }
+    }
+
     .first__wrapper {
       .first__title {
         font-size: 22px;
