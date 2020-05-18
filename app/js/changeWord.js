@@ -1,5 +1,8 @@
 const changeWord = () => {
   const words = $('.first__title-word');
+  if(words.length < 0) {
+    return
+  }
 
   setInterval(() => {
     const current = $('.first__title-word--active');

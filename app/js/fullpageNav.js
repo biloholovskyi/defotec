@@ -235,4 +235,4 @@ const switchSection = (indexNumber, numberAnim) => {
   }
 }
 
-export {fullPageNav, fullPageStart, fullPageResize, mobileScroll, switchScroll, stopScroll}
+export {fullPageNav, fullPageStart, fullPageResize, mobileScroll, switchScroll, stopScroll, numberRoll}

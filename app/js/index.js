@@ -1,5 +1,5 @@
 import 'normalize.css';
-import {fullPageNav, fullPageStart, fullPageResize, mobileScroll, switchScroll, stopScroll} from "./fullpageNav";
+import {fullPageNav, fullPageStart, numberRoll, mobileScroll, switchScroll, stopScroll} from "./fullpageNav";
 import './particles';
 import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
@@ -13,8 +13,18 @@ import {changeWord} from "./changeWord";
 $(document).ready(function() {
   fullPageStart();
   changeWord();
-  particlesJS.load('particle', 'particles.json', function() {});
-  particlesJS.load('particle-2', 'particles.json', function() {}); 
+  if($('.anim-number').length > 0) {
+    setTimeout(() => {
+      numberRoll();
+    }, 2000)
+  }
+
+  if($('#particle').length > 0) {
+    particlesJS.load('particle', 'particles.json', function() {});
+  }
+  if($('#particle-2').length > 0) {
+    particlesJS.load('particle-2', 'particles.json', function() {});
+  }
 
   $('.fullPageNav__item, .first__button-down').on('click', (e) => fullPageNav(e));
   $('.home-man__nav .next').on('click', () => manSliderNext('next'));
