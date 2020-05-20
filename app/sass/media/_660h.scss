@@ -1,0 +1,16 @@
+@media all and (max-height: 660px) {
+  .main-modal__body {
+    max-height: 90%;
+    width: 90%;
+    overflow: auto;
+    padding: 30px 15px;
+
+    .modal-body__close {
+      top: 15px;
+      right: 15px;
+      filter: brightness(0);
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

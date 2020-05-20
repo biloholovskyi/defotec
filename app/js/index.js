@@ -1,5 +1,5 @@
 import 'normalize.css';
-import {fullPageNav, fullPageStart, fullPageResize, mobileScroll, switchScroll} from "./fullpageNav";
+import {fullPageNav, fullPageStart, fullPageResize, mobileScroll, switchScroll, stopScroll} from "./fullpageNav";
 import './particles';
 import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
@@ -30,35 +30,39 @@ $(document).ready(function() {
     if($(window).width() < 992) {
       mobileScroll();
     }
-  });  
+  });
+  document.querySelectorAll('.fullPage').forEach((elem) => {
+    if (elem.addEventListener) {
+      if ('onwheel' in document) {
+        // IE9+, FF17+
+        elem.addEventListener("wheel", switchScroll);
+      } else if ('onmousewheel' in switchScroll) {
+        // устаревший вариант события
+        elem.addEventListener("mousewheel", switchScroll);
+      } else {
+        // Firefox < 17
+        elem.addEventListener("MozMousePixelScroll", switchScroll);
+      }
+    } else { // IE8-
+      elem.attachEvent("onmousewheel", switchScroll);
+    }
+  });
+  $('.out-scroll').on('scroll', stopScroll);
 
-  // document.querySelectorAll('.fullPage').forEach((elem) => {
-  //   if (elem.addEventListener) {
-  //     if ('onwheel' in document) {
-  //       // IE9+, FF17+
-  //       elem.addEventListener("wheel", switchScroll);
-  //     } else if ('onmousewheel' in switchScroll) {
-  //       // устаревший вариант события
-  //       elem.addEventListener("mousewheel", switchScroll);
-  //     } else {
-  //       // Firefox < 17
-  //       elem.addEventListener("MozMousePixelScroll", switchScroll);
-  //     }
-  //   } else { // IE8-
-  //     elem.attachEvent("onmousewheel", switchScroll);
-  //   }
-  // });
+  // close modal
+  $('body').on('click', (e) => {
+    const modal = $('.main-modal__body, .main-modal-show');
+    if (!modal.is(e.target) && modal.has(e.target).length === 0) {
+      closeModalForm();
+    }
+  })
 
   $('.anhors').on('click', 'a', (function(n){
       n.preventDefault();
     var id = $(this).attr('href'),
         top = $(id).offset().top;
-    $('html,body').animate({scrollTop: top}, 800);     
-
-
+    $('html,body').animate({scrollTop: top}, 800);
   }));
- 
-      
 });
 
 
