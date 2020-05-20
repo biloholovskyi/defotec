@@ -56,6 +56,9 @@
         }
         
     }
+    .product_next_btn svg path {
+       transition: .4s;
+    }
     .product_next_btn:hover svg path {
         fill: #3586DC;
     }
