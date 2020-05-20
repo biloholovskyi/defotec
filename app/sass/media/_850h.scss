@@ -14,4 +14,30 @@
       padding-top: 0;
     }
   }
+   // product page 
+   .products {
+    .products-title h1 {
+      
+    }
+    .product-slider{
+      .owl-carousel {
+        .item {
+          .slider-content:hover .hidden-block{
+            transform: scale(0.8) translateY(-36px);
+            }
+            .slider-content:hover h2 {
+               
+                transform: translateY(-55px);
+                font-size: 36px;
+                line-height: 31px;
+              }
+              .slider-content:hover .hidden-text {
+                transform: translateY(-62px);
+                font-size: 27px;
+              }
+            
+        }
+      }
+    }
+  }
 }

@@ -31,6 +31,7 @@
                     max-width: 445px;
                     margin: 0 auto;
                     transition: .4s;
+                    padding-top: 60px;
                     .hidden-block {
                         transform: scale(0);
                         // display: none;
@@ -87,7 +88,9 @@
                         
                     }
                 }
-                
+                .slider-content:hover {
+                    padding-top: 0;
+                }
                 .slider-content:hover .hidden-block{
                     transform: scale(1);
                     height: 340px;
