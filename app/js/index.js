@@ -9,10 +9,12 @@ import './accordion';
 import './owl.carousel.min';
 import './productSlider';
 import {changeWord} from "./changeWord";
+import {overlaySize} from "./productOverlay";
 
 $(document).ready(function() {
   fullPageStart();
   changeWord();
+  overlaySize();
   if($('.anim-number').length > 0) {
     setTimeout(() => {
       numberRoll();
@@ -80,9 +82,5 @@ $(document).ready(function() {
 
 
 $(window).resize(function () {
-  // if($(window).width() < 992) {
-  //   fullPageResize();
-  // } else {
-  //   fullPageStart();
-  // }
+  overlaySize();
 });
