@@ -1,4 +1,4 @@
-.slider-servis {
+#slider-servis {
     padding-top: 100px;
     overflow: hidden;
     .home-man-title {
@@ -20,4 +20,11 @@
     .home-man__name--current {
         display: block;
     }  
+    .home-man__row {
+        z-index: 0;
+    }
+    .servis-row_KD {
+        position: relative;
+        z-index: 1;
+    }
 }

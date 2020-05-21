@@ -2,6 +2,9 @@
     width: 100%;
     background: #3586dc;
     padding-top: 235px;
+    .col-team {
+        max-width: calc(100% / 12 * 3);
+    }
     .contacts-title {
         h1 {
             font-family: Bank Sans EF CY;

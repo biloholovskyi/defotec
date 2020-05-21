@@ -240,4 +240,28 @@
     }
   }
   // partner end
+  // product page 
+  .products {
+    padding: 150px 0 0;
+    .product-slider{
+      padding: 10px 0 0;
+      .owl-carousel {
+        .item {
+          .slider-content:hover .hidden-block{
+            transform: scale(.6) translateY(-42px);
+            }
+            .slider-content:hover h2 {
+                transform: translateY(-85px);
+                font-size: 33px;
+              }
+              .slider-content {
+                  .hidden-text {
+                    display: none;
+                  }
+              }
+        }
+      }
+    }
+  }
+  
 }

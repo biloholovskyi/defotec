@@ -13,4 +13,31 @@
       height: 20px;
     }
   }
+  // servis page
+  .servis {
+    padding-top: 165px;
+    .servis-content {
+      h1 {
+        margin-bottom: 15px;
+        font-size: 45px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        font-size: 17px;
+      }
+
+      .servis__numbers {
+        margin-bottom: 80px;
+        .servis__number{
+          font-size: 70px;
+        }
+        
+      }
+      .servis__button-down::after {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
 }

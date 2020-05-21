@@ -55,7 +55,7 @@
     margin-bottom: 30px;
     margin-top:1px;
     position: relative;
-    
+    border-bottom: 2px solid #e0e0e0;
     
         
         .head{
@@ -67,7 +67,7 @@
             line-height: 24px;
             color: #3C3C3B;
             border: none;
-            border-bottom: 2px solid #E0E0E0;
+            border-top: 2px solid #E0E0E0;
             background-color: transparent;
             cursor: pointer;
             padding: 20px 0;
@@ -92,7 +92,10 @@
 
         .head svg.active  {
             transform: translateY(-50%) rotate(180deg);
-        }  
+        } 
+        .head.active  {
+           border-bottom: none;
+        } 
         
         .hidden{
             width:100%;
@@ -120,9 +123,7 @@
         
 }
 
-#accordeon .head:first-child {
-    border-top: 2px solid #E0E0E0; 
-}
+
 
   
 
