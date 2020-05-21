@@ -327,4 +327,9 @@
     }
   }
   // single-product-page end
+    .contacts {
+        .col-team {
+          max-width: calc(100% / 10 * 10);
+      }
+    }  
 }
