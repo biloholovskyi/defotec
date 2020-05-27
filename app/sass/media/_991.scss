@@ -388,4 +388,99 @@
     }
   }
   // single-product-page end
+
+  // products slider
+  .products {
+    padding: 110px 0;
+
+    .product-slider {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .owl-carousel {
+        position: relative;
+
+        .owl-nav {
+          display: block !important;
+          position: absolute;
+          width: 100%;
+          margin-top: -40px !important;
+          top: 50%;
+
+          button {
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border-radius: 50%;
+            color: transparent;
+            position: absolute;
+            top: 0;
+            background-position: 19px center;
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-image: url(../media/icon/arrow-slider.svg);
+          }
+
+          .disabled {
+            background-image: url(../media/icon/arrow-disabled.svg);
+            opacity: 1;
+          }
+
+          .owl-prev {
+            left: -40px;
+            transform: rotate(180deg);
+          }
+
+          .owl-next {
+            right: -40px;
+          }
+
+        }
+
+        .item {
+          .slider-content {
+            padding-top: 0;
+
+            .img-elem {
+              height: 0;
+              margin: 10px auto;
+            }
+
+            .hidden-block {
+              transform: scale(1);
+              height: 250px !important;
+              transition: all .6s;
+
+              .hidden-img {
+                object-fit: contain;
+              }
+
+              .hidden-img2 {
+                width: 40px;
+                height: 40px;
+                right: 10px;
+              }
+            }
+
+            h2 {
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 120%;
+              margin-top: 30px;
+            }
+
+            .hidden-text {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 120%;
+              color: #3586DC;
+            }
+          }
+        }
+      }
+    }
+  }
+  // products slider end
 }
