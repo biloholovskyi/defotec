@@ -7,16 +7,15 @@ import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from 
 import {play, close} from "./aboutVideo";
 import './accordion';
 import './owl.carousel.min';
-import './productSlider';
+// import './productSlider';
 import {changeWord} from "./changeWord";
 import {overlaySize} from "./productOverlay";
-import {showAnim} from "./productSlider";
+// import {showAnim} from "./productSlider";
 
 $(document).ready(function() {
   fullPageStart();
   changeWord();
   overlaySize();
-  showAnim();
   if($('.anim-number').length > 0) {
     setTimeout(() => {
       numberRoll();
