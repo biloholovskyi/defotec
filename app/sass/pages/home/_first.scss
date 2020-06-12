@@ -52,7 +52,7 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
     opacity: 0.5;
-    margin-top: -411px;
+    margin-top: -447px;
 
     &--mobile {
       display: none;
@@ -77,6 +77,10 @@
       display: inline-block;
       transform: translateY(10px);
       color: transparent;
+    }
+
+    .word-no-wrapp {
+      white-space: nowrap;
     }
 
     &-word {
